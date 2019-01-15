@@ -7,6 +7,9 @@ League of Legends account checker with proxy (C#)
 
 Checker is able to support many regions.
 
+## Accounts manager
+![img](https://github.com/fiftythreecorp/LeagueOfLegendsAccountChecker/blob/master/accounts.png?raw=true)
+
 ## Account data gathering
 ![img](https://github.com/fiftythreecorp/LeagueOfLegendsAccountChecker/blob/master/main.png?raw=true)
 

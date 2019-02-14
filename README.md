@@ -1,4 +1,4 @@
-## LeagueOfLegendsAccountChecker [046sd]
+## League Of Legend Account Checker ( LeagueOfLegendsAccountChecker ) [046sd]
 League of Legends account checker with proxy (C#)
 
 # Download

@@ -14,6 +14,12 @@ Checker is able to support many regions.
 ## Accounts manager
 ![img](https://github.com/fiftythreecorp/LeagueOfLegendsAccountChecker/blob/master/accounts.png?raw=true)
 
+## Account Champion List
+![img](https://raw.githubusercontent.com/fiftythreecorp/LeagueOfLegendsAccountChecker/master/ChampionList.png)
+
+## Account Skin List
+![img](https://raw.githubusercontent.com/fiftythreecorp/LeagueOfLegendsAccountChecker/master/SkinList.png)
+
 ## Account data gathering
 ![img](https://github.com/fiftythreecorp/LeagueOfLegendsAccountChecker/blob/master/main.png?raw=true)
 

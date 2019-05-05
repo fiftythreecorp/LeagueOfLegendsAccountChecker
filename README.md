@@ -34,3 +34,7 @@ When all proxies have been used, it will automatically rotate to the first proxy
 If you have any questions you can contact me in Telegram:
 
 @fiftythreecorp
+
+Telegram channel:
+
+@checker53

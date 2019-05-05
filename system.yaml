@@ -1,0 +1,908 @@
+---
+app:
+  app_name: LeagueClient
+  bugsplat:
+    debug: league_client_internal_riotgames_com
+    public: league_client_riotgames_com
+    releasedbg: league_client_internal_riotgames_com
+  local_settings_file: Config/LeagueClientSettings.yaml
+  log_dir: LeagueClient Logs
+  project: leagueclient
+  respawn:
+    command: LeagueClient.exe
+    display_name: League of Legends
+  splash: lol
+  ux_app_bundle_name: League of Legends
+  ux_helper_name: LeagueClientUxHelper
+  ux_name: LeagueClientUx
+build:
+  branch: Releases/9.9
+  patchline-visible-name: ''
+default_region: NA
+patcher:
+  channel: https://lol.secure.dyn.riotcdn.net/channels/public
+  product_refresh_period: 20
+  self_update:
+    component_id: league_client_sln
+    executables:
+      app: LeagueClient.exe
+      exe: LeagueClient.exe
+    files:
+      debug:
+      - BsSndRpt.exe
+      - BugSplatD.dll
+      - BugSplatRc.dll
+      - concrt140d.dll
+      - msvcp140d.dll
+      - vcruntime140d.dll
+      - api-ms-win-core-console-l1-1-0.dll
+      - api-ms-win-core-datetime-l1-1-0.dll
+      - api-ms-win-core-debug-l1-1-0.dll
+      - api-ms-win-core-errorhandling-l1-1-0.dll
+      - api-ms-win-core-file-l1-1-0.dll
+      - api-ms-win-core-file-l1-2-0.dll
+      - api-ms-win-core-file-l2-1-0.dll
+      - api-ms-win-core-handle-l1-1-0.dll
+      - api-ms-win-core-heap-l1-1-0.dll
+      - api-ms-win-core-interlocked-l1-1-0.dll
+      - api-ms-win-core-libraryloader-l1-1-0.dll
+      - api-ms-win-core-localization-l1-2-0.dll
+      - api-ms-win-core-memory-l1-1-0.dll
+      - api-ms-win-core-namedpipe-l1-1-0.dll
+      - api-ms-win-core-processenvironment-l1-1-0.dll
+      - api-ms-win-core-processthreads-l1-1-0.dll
+      - api-ms-win-core-processthreads-l1-1-1.dll
+      - api-ms-win-core-profile-l1-1-0.dll
+      - api-ms-win-core-rtlsupport-l1-1-0.dll
+      - api-ms-win-core-string-l1-1-0.dll
+      - api-ms-win-core-synch-l1-1-0.dll
+      - api-ms-win-core-synch-l1-2-0.dll
+      - api-ms-win-core-sysinfo-l1-1-0.dll
+      - api-ms-win-core-timezone-l1-1-0.dll
+      - api-ms-win-core-util-l1-1-0.dll
+      - api-ms-win-crt-conio-l1-1-0.dll
+      - api-ms-win-crt-convert-l1-1-0.dll
+      - api-ms-win-crt-environment-l1-1-0.dll
+      - api-ms-win-crt-filesystem-l1-1-0.dll
+      - api-ms-win-crt-heap-l1-1-0.dll
+      - api-ms-win-crt-locale-l1-1-0.dll
+      - api-ms-win-crt-math-l1-1-0.dll
+      - api-ms-win-crt-multibyte-l1-1-0.dll
+      - api-ms-win-crt-private-l1-1-0.dll
+      - api-ms-win-crt-process-l1-1-0.dll
+      - api-ms-win-crt-runtime-l1-1-0.dll
+      - api-ms-win-crt-stdio-l1-1-0.dll
+      - api-ms-win-crt-string-l1-1-0.dll
+      - api-ms-win-crt-time-l1-1-0.dll
+      - api-ms-win-crt-utility-l1-1-0.dll
+      - ucrtbased.dll
+      - libcurld.dll
+      - libcrypto-1_1.dll
+      - libssl-1_1.dll
+      - libnghttp2.dll
+      - yaml.dll
+      - zlib.dll
+      - libzstd.dll
+      - system.yaml
+      public:
+      - BsSndRpt.exe
+      - BugSplat.dll
+      - BugSplatRc.dll
+      - concrt140.dll
+      - msvcp140.dll
+      - vcruntime140.dll
+      - api-ms-win-core-console-l1-1-0.dll
+      - api-ms-win-core-datetime-l1-1-0.dll
+      - api-ms-win-core-debug-l1-1-0.dll
+      - api-ms-win-core-errorhandling-l1-1-0.dll
+      - api-ms-win-core-file-l1-1-0.dll
+      - api-ms-win-core-file-l1-2-0.dll
+      - api-ms-win-core-file-l2-1-0.dll
+      - api-ms-win-core-handle-l1-1-0.dll
+      - api-ms-win-core-heap-l1-1-0.dll
+      - api-ms-win-core-interlocked-l1-1-0.dll
+      - api-ms-win-core-libraryloader-l1-1-0.dll
+      - api-ms-win-core-localization-l1-2-0.dll
+      - api-ms-win-core-memory-l1-1-0.dll
+      - api-ms-win-core-namedpipe-l1-1-0.dll
+      - api-ms-win-core-processenvironment-l1-1-0.dll
+      - api-ms-win-core-processthreads-l1-1-0.dll
+      - api-ms-win-core-processthreads-l1-1-1.dll
+      - api-ms-win-core-profile-l1-1-0.dll
+      - api-ms-win-core-rtlsupport-l1-1-0.dll
+      - api-ms-win-core-string-l1-1-0.dll
+      - api-ms-win-core-synch-l1-1-0.dll
+      - api-ms-win-core-synch-l1-2-0.dll
+      - api-ms-win-core-sysinfo-l1-1-0.dll
+      - api-ms-win-core-timezone-l1-1-0.dll
+      - api-ms-win-core-util-l1-1-0.dll
+      - api-ms-win-crt-conio-l1-1-0.dll
+      - api-ms-win-crt-convert-l1-1-0.dll
+      - api-ms-win-crt-environment-l1-1-0.dll
+      - api-ms-win-crt-filesystem-l1-1-0.dll
+      - api-ms-win-crt-heap-l1-1-0.dll
+      - api-ms-win-crt-locale-l1-1-0.dll
+      - api-ms-win-crt-math-l1-1-0.dll
+      - api-ms-win-crt-multibyte-l1-1-0.dll
+      - api-ms-win-crt-private-l1-1-0.dll
+      - api-ms-win-crt-process-l1-1-0.dll
+      - api-ms-win-crt-runtime-l1-1-0.dll
+      - api-ms-win-crt-stdio-l1-1-0.dll
+      - api-ms-win-crt-string-l1-1-0.dll
+      - api-ms-win-crt-time-l1-1-0.dll
+      - api-ms-win-crt-utility-l1-1-0.dll
+      - ucrtbase.dll
+      - libcurl.dll
+      - libcrypto-1_1.dll
+      - libssl-1_1.dll
+      - libnghttp2.dll
+      - yaml.dll
+      - zlib.dll
+      - libzstd.dll
+      - system.yaml
+      releasedbg:
+      - BsSndRpt.exe
+      - BugSplat.dll
+      - BugSplatRc.dll
+      - concrt140.dll
+      - msvcp140.dll
+      - vcruntime140.dll
+      - api-ms-win-core-console-l1-1-0.dll
+      - api-ms-win-core-datetime-l1-1-0.dll
+      - api-ms-win-core-debug-l1-1-0.dll
+      - api-ms-win-core-errorhandling-l1-1-0.dll
+      - api-ms-win-core-file-l1-1-0.dll
+      - api-ms-win-core-file-l1-2-0.dll
+      - api-ms-win-core-file-l2-1-0.dll
+      - api-ms-win-core-handle-l1-1-0.dll
+      - api-ms-win-core-heap-l1-1-0.dll
+      - api-ms-win-core-interlocked-l1-1-0.dll
+      - api-ms-win-core-libraryloader-l1-1-0.dll
+      - api-ms-win-core-localization-l1-2-0.dll
+      - api-ms-win-core-memory-l1-1-0.dll
+      - api-ms-win-core-namedpipe-l1-1-0.dll
+      - api-ms-win-core-processenvironment-l1-1-0.dll
+      - api-ms-win-core-processthreads-l1-1-0.dll
+      - api-ms-win-core-processthreads-l1-1-1.dll
+      - api-ms-win-core-profile-l1-1-0.dll
+      - api-ms-win-core-rtlsupport-l1-1-0.dll
+      - api-ms-win-core-string-l1-1-0.dll
+      - api-ms-win-core-synch-l1-1-0.dll
+      - api-ms-win-core-synch-l1-2-0.dll
+      - api-ms-win-core-sysinfo-l1-1-0.dll
+      - api-ms-win-core-timezone-l1-1-0.dll
+      - api-ms-win-core-util-l1-1-0.dll
+      - api-ms-win-crt-conio-l1-1-0.dll
+      - api-ms-win-crt-convert-l1-1-0.dll
+      - api-ms-win-crt-environment-l1-1-0.dll
+      - api-ms-win-crt-filesystem-l1-1-0.dll
+      - api-ms-win-crt-heap-l1-1-0.dll
+      - api-ms-win-crt-locale-l1-1-0.dll
+      - api-ms-win-crt-math-l1-1-0.dll
+      - api-ms-win-crt-multibyte-l1-1-0.dll
+      - api-ms-win-crt-private-l1-1-0.dll
+      - api-ms-win-crt-process-l1-1-0.dll
+      - api-ms-win-crt-runtime-l1-1-0.dll
+      - api-ms-win-crt-stdio-l1-1-0.dll
+      - api-ms-win-crt-string-l1-1-0.dll
+      - api-ms-win-crt-time-l1-1-0.dll
+      - api-ms-win-crt-utility-l1-1-0.dll
+      - ucrtbase.dll
+      - libcurl.dll
+      - libcrypto-1_1.dll
+      - libssl-1_1.dll
+      - libnghttp2.dll
+      - yaml.dll
+      - zlib.dll
+      - libzstd.dll
+      - system.yaml
+    icon_version: 2
+    legacy_paths:
+    - RADS/projects/lol_air_client*
+    restart_delay: 0
+player_bug_report_url: https://pbr.leagueoflegends.com/{webRegion}/{locale}/bugReport/create?app_name=LeagueClient&app_version={appVersion}&system_os={systemOS}&user_agent={userAgent}
+player_support_url:
+  cs_CZ: https://support.riotgames.com/hc/cs
+  de_DE: https://support.riotgames.com/hc/de
+  default: https://support.riotgames.com/
+  el_GR: https://support.riotgames.com/hc/el
+  en_AU: https://support.riotgames.com/hc/en-us
+  en_GB: https://support.riotgames.com/hc/en-us
+  en_PL: https://support.riotgames.com/hc/en-us
+  en_US: https://support.riotgames.com/hc/en-us
+  es_AR: https://support.riotgames.com/hc/es-419
+  es_ES: https://support.riotgames.com/hc/es
+  es_MX: https://support.riotgames.com/hc/es-419
+  fr_FR: https://support.riotgames.com/hc/fr
+  hu_HU: https://support.riotgames.com/hc/hu
+  it_IT: https://support.riotgames.com/hc/it
+  ja_JP: https://support.riotgames.com/hc/ja
+  ko_KR: https://signup.leagueoflegends.co.kr/Customer/faq.php
+  pl_PL: https://support.riotgames.com/hc/pl
+  pt_BR: https://support.riotgames.com/hc/pt-br
+  ro_RO: https://support.riotgames.com/hc/ro
+  ru_RU: https://support.riotgames.com/hc/ru
+  tr_TR: https://support.riotgames.com/hc/tr
+products:
+- id: league_of_legends
+  installer_project: league_client
+  patcher:
+    components:
+    - copy_to_solution: false
+      headers: []
+      history: keep
+      hostname: l3cdn.riotgames.com
+      id: league_client_sln
+      locale: en_US
+      region: NA
+      remote_path: /releases/live
+      type: solution
+      use_tls: true
+    - copy_to_solution: true
+      headers: []
+      history: none
+      hostname: l3cdn.riotgames.com
+      id: lol_game_client_sln
+      locale: en_US
+      region: NA
+      remote_path: /releases/live
+      type: solution
+      use_tls: true
+    id: league_of_legends
+region_data:
+  BR:
+    available_locales:
+    - pt_BR
+    default_locale: pt_BR
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-br-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: BR1
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.br.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.mia1.br1
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.br.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.br.lol.riotgames.com/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.br.leagueoflegends.com
+      license_agreement_urls:
+        eula: http://br.leagueoflegends.com/{language}/legal/eula
+        terms_of_use: http://br.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore.br.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://us.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/br/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#br
+      store:
+        store_url: https://store.br.lol.riotgames.com
+      voice:
+        access_token_uri: https://us.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://us.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp0sae1.vivox.com
+        voice_url: https://riotp0sae1.www.vivox.com/api2
+    web_region: br
+  EUNE:
+    available_locales:
+    - en_GB
+    - cs_CZ
+    - el_GR
+    - hu_HU
+    - pl_PL
+    - ro_RO
+    default_locale: en_GB
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-eune-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: EUN1
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.eun1.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.euc1.eun1
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.eun1.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.eun1.lol.riotgames.com/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.eune.leagueoflegends.com
+      license_agreement_urls:
+        terms_of_use: http://eune.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore.eun1.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://eu.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/eune/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#eune
+      store:
+        store_url: https://store.eun1.lol.riotgames.com
+      voice:
+        access_token_uri: https://eu.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://eu.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp0euw1.vivox.com
+        voice_url: https://riotp0euw1.www.vivox.com/api2
+    web_region: eune
+  EUW:
+    available_locales:
+    - en_GB
+    - de_DE
+    - es_ES
+    - fr_FR
+    - it_IT
+    default_locale: en_GB
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-euw-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: EUW1
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.euw1.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.ams1.euw1
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.euw1.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.euw1.lol.riotgames.com/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.euw.leagueoflegends.com
+      license_agreement_urls:
+        terms_of_use: http://euw.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore.euw1.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://eu.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/euw/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#euw
+      store:
+        store_url: https://store.euw1.lol.riotgames.com
+      voice:
+        access_token_uri: https://eu.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://eu.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp0euw1.vivox.com
+        voice_url: https://riotp0euw1.www.vivox.com/api2
+    web_region: euw
+  JP:
+    available_locales:
+    - ja_JP
+    default_locale: ja_JP
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-jp-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: JP1
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.jp1.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.nrt1.jp1
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.jp1.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.jp1.lol.riotgames.jp/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.jp.leagueoflegends.com
+      license_agreement_urls:
+        eula: http://jp.leagueoflegends.com/{language}/legal/eula
+        terms_of_use: http://jp.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore.jp1.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://asia.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/jp/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#jp
+      store:
+        store_url: https://store.jp1.lol.riotgames.com
+      voice:
+        access_token_uri: https://asia.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://asia.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp0apne1.vivox.com
+        voice_url: https://riotp0apne1.www.vivox.com/api2
+    web_region: jp
+  LA1:
+    available_locales:
+    - es_MX
+    default_locale: es_MX
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-la1-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: LA1
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.la1.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.mia1.la1
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.la1.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.la1.lol.riotgames.com/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.lan.leagueoflegends.com
+      license_agreement_urls:
+        eula: http://lan.leagueoflegends.com/{language}/legal/eula
+        terms_of_use: http://lan.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore2.la1.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://us.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/lan/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#lan
+      store:
+        store_url: https://store.la1.lol.riotgames.com
+      voice:
+        access_token_uri: https://us.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://us.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp0use1.vivox.com
+        voice_url: https://riotp0use1.www.vivox.com/api2
+    web_region: lan
+  LA2:
+    available_locales:
+    - es_MX
+    default_locale: es_MX
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-la2-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: LA2
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.la2.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.mia1.la2
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.la2.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.la2.lol.riotgames.com/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.las.leagueoflegends.com
+      license_agreement_urls:
+        eula: http://las.leagueoflegends.com/{language}/legal/eula
+        terms_of_use: http://las.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore2.la2.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://us.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/las/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#las
+      store:
+        store_url: https://store.la2.lol.riotgames.com
+      voice:
+        access_token_uri: https://us.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://us.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp0sae1.vivox.com
+        voice_url: https://riotp0sae1.www.vivox.com/api2
+    web_region: las
+  NA:
+    available_locales:
+    - en_US
+    default_locale: en_US
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-na-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: NA1
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.na2.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.pdx2.na1
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.na2.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.na2.lol.riotgames.com/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.na.leagueoflegends.com
+      license_agreement_urls:
+        terms_of_use: http://na.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore2.na.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://us.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/na/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#na
+      store:
+        store_url: https://store.na2.lol.riotgames.com
+      voice:
+        access_token_uri: https://us.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://us.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp0use1.vivox.com
+        voice_url: https://riotp0use1.www.vivox.com/api2
+    web_region: na
+  OC1:
+    available_locales:
+    - en_AU
+    default_locale: en_AU
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-oc1-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: OC1
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.oc1.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.pdx1.oc1
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.oc1.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.oc1.lol.riotgames.com/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.oce.leagueoflegends.com
+      license_agreement_urls:
+        eula: http://oce.leagueoflegends.com/{language}/legal/eula
+        terms_of_use: http://oce.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore.oc1.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://us.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/oce/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#oce
+      store:
+        store_url: https://store.oc1.lol.riotgames.com
+      voice:
+        access_token_uri: https://asia.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://asia.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp0apse2.vivox.com
+        voice_url: https://riotp0apse2.www.vivox.com/api2
+    web_region: oce
+  RU:
+    available_locales:
+    - ru_RU
+    default_locale: ru_RU
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-ru-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: RU
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.ru.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.euc1.ru
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.ru.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.ru.lol.riotgames.com/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.ru.leagueoflegends.com
+      license_agreement_urls:
+        eula: http://ru.leagueoflegends.com/{language}/legal/eula
+        terms_of_use: http://ru.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore.ru.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://eu.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/ru/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#ru
+      store:
+        store_url: https://store.ru.lol.riotgames.com
+      voice:
+        access_token_uri: https://eu.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://eu.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp.vivox.com
+        voice_url: https://riotp.www.vivox.com/api2
+    web_region: ru
+  TEST:
+    available_locales:
+    - en_US
+    default_locale: en_US
+    is_hidden: true
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-test-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: NA1
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.na2.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.pdx2.na1
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.na2.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.na2.lol.riotgames.com/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.na.leagueoflegends.com
+      license_agreement_urls:
+        terms_of_use: http://na.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore2.na.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://us.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/na/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#na
+      store:
+        store_url: https://store.na2.lol.riotgames.com
+      voice:
+        access_token_uri: https://us.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://us.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp0use1.vivox.com
+        voice_url: https://riotp0use1.www.vivox.com/api2
+    web_region: na
+  TR:
+    available_locales:
+    - tr_TR
+    default_locale: tr_TR
+    patcher:
+      client_patcher: chunking
+      game_patcher: chunking
+      patchline: live-tr-win
+    rso:
+      allow_lq_fallback: false
+      kount:
+        collector: prod02.kaxsdc.com
+        merchant: '108000'
+      token: eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczpcL1wvYXV0aC5yaW90Z2FtZXMuY29tXC90b2tlbiIsInN1YiI6ImxvbCIsImlzcyI6ImxvbCIsImV4cCI6MTYwMTE1MTIxNCwiaWF0IjoxNTM4MDc5MjE0LCJqdGkiOiIwYzY3OThmNi05YTgyLTQwY2ItOWViOC1lZTY5NjJhOGUyZDcifQ.dfPcFQr4VTZpv8yl1IDKWZz06yy049ANaLt-AKoQ53GpJrdITU3iEUcdfibAh1qFEpvVqWFaUAKbVIxQotT1QvYBgo_bohJkAPJnZa5v0-vHaXysyOHqB9dXrL6CKdn_QtoxjH2k58ZgxGeW6Xsd0kljjDiD4Z0CRR_FW8OVdFoUYh31SX0HidOs1BLBOp6GnJTWh--dcptgJ1ixUBjoXWC1cgEWYfV00-DNsTwer0UI4YN2TDmmSifAtWou3lMbqmiQIsIHaRuDlcZbNEv_b6XuzUhi_lRzYCwE4IKSR-AwX_8mLNBLTVb8QzIJCPR-MGaPL8hKPdprgjxT0m96gw
+    rso_platform_id: TR1
+    servers:
+      account_recovery:
+        forgot_password_url: https://recovery.riotgames.com/{{lang}}/forgot-password?region={{region}}
+        forgot_username_url: https://recovery.riotgames.com/{{lang}}/forgot-username?region={{region}}
+      chat:
+        allow_self_signed_cert: false
+        chat_host: chat.tr.lol.riotgames.com
+        chat_port: 5223
+      discoverous_service_location: lolriot.euc1.tr1
+      email_verification:
+        external_url: https://email-verification.riotgames.com/api
+      entitlements:
+        entitlements_url: https://entitlements.auth.riotgames.com/api/token/v1
+      lcds:
+        lcds_host: prod.tr.lol.riotgames.com
+        lcds_port: 2099
+        login_queue_url: https://lq.tr.lol.riotgames.com/login-queue/rest/queues/lol
+        use_tls: true
+      league_edge:
+        league_edge_url: https://ledge.tr.leagueoflegends.com
+      license_agreement_urls:
+        terms_of_use: http://tr.leagueoflegends.com/{language}/legal/termsofuse
+      payments:
+        payments_host: https://plstore.tr.lol.riotgames.com
+      prelogin_config:
+        prelogin_config_url: https://prod.config.patcher.riotgames.com
+      rms:
+        rms_heartbeat_interval_seconds: 60
+        rms_url: wss://eu.edge.rms.si.riotgames.com:443
+      service_status:
+        api_url: https://status.leagueoflegends.com/shards/tr/synopsis
+        human_readable_status_url: https://status.leagueoflegends.com/#tr
+      store:
+        store_url: https://store.tr.lol.riotgames.com
+      voice:
+        access_token_uri: https://eu.vts.si.riotgames.com/access_token/v1
+        auth_token_uri: https://eu.vts.si.riotgames.com/auth_token/v1
+        jwt2gvt_url: null
+        provider: vivox
+        use_external_auth: true
+        voice_domain: riotp0euc1.vivox.com
+        voice_url: https://riotp0euc1.www.vivox.com/api2
+    web_region: tr
+riot_client_environment:
+- RiotClient

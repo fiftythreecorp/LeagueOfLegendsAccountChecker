@@ -3,7 +3,7 @@ League of Legends account checker with proxy (C#)
 
 # Download
 
-<a href='https://github.com/fiftythreecorp/LeagueOfLegendsAccountChecker/releases/download/v1.0.4/LeagueOfLegendsAccountCheckerRelease.rar' target='_blank'>DOWNLOAD (1.0.4) 05.0.5.2019</a>
+<a href='https://github.com/fiftythreecorp/LeagueOfLegendsAccountChecker/releases/download/v1.0.4/LeagueOfLegendsAccountCheckerRelease.rar' target='_blank'>DOWNLOAD (1.0.4) 05.05.2019</a>
 
 # Features
 ## Supports many regions
